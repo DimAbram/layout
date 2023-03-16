@@ -1,21 +1,48 @@
-import { H3, Input, Button } from "../UI";
-import cn from 'classnames'
+import { motion } from "framer-motion";
+import { MH3, MInput, MButton } from "../UI";
+import cn from "classnames";
 import st from "./CraForm.module.scss";
 
- export const CraForm = () => (
-   <div className={cn(st.craForm)}>
-     <div className='wrapper'>
-       <H3 text='Есть вопросы?' />
-       <form className={st.craForm__form}>
-         <span className={st.craForm__text}>
-           *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.h
-         </span>
-         <Input placeholder='Ваше имя' />
-         <Input placeholder='Ваш телефон' />
-         <Button>Посмотреть район</Button>
-       </form>
-     </div>
-   </div>
- );
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 
-
+export const CraForm = () => (
+  <motion.div
+    initial='hidden'
+    whileInView='visible'
+    viewport={{ amount: 0.3, once: true }}
+    className={cn(st.craForm)}
+  >
+    <div className='wrapper'>
+      <MH3 custom={1} variants={textAnimation} text='Есть вопросы?' />
+      <motion.form
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 0.3, once: true }}
+        className={st.craForm__form}
+      >
+        <motion.span
+          custom={1}
+          variants={textAnimation}
+          className={st.craForm__text}
+        >
+          *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.h
+        </motion.span>
+        <MInput custom={2} variants={textAnimation} placeholder='Ваше имя' />
+        <MInput custom={3} variants={textAnimation} placeholder='Ваш телефон' />
+        <MButton custom={4} variants={textAnimation}>
+          Посмотреть район
+        </MButton>
+      </motion.form>
+    </div>
+  </motion.div>
+);

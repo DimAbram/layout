@@ -34,16 +34,16 @@ import st from "./Footer.module.scss";
          </span>
          <div className={st.footer__row__links}>
            <a href='#!'>
-             <YouTube />
+             <YouTube className={st.footer__icon} />
            </a>
            <a href='#!'>
-             <Vk />
+             <Vk className={st.footer__icon} />
            </a>
            <a href='#!'>
-             <Facebook />
+             <Facebook className={st.footer__icon} />
            </a>
            <a href='#!'>
-             <Instagram />
+             <Instagram className={st.footer__icon} />
            </a>
          </div>
        </div>

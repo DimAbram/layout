@@ -2,6 +2,7 @@
   background: #2d343c;
   height: 272px;
   &__wrapper {
+    width: 100%;
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
@@ -28,6 +29,13 @@
       line-height: 16px;
       letter-spacing: 0.05em;
       color: #d4c17f;
+    }
+  }
+  &__icon {
+    fill: white;
+    &:hover {
+      transition: 0.3s all ease;
+      fill: #d4c17f;
     }
   }
 }

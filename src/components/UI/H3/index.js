@@ -1,1 +1,1 @@
-export {H3} from "./H3";
+export {H3, MH3} from "./H3";
