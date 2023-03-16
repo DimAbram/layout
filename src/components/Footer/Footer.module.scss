@@ -1,0 +1,33 @@
+.footer {
+  background: #2d343c;
+  height: 272px;
+  &__wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__row {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    &__links {
+      display: flex;
+      gap: 20px;
+    }
+    &__mail {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      color: #d4c17f;
+    }
+  }
+}

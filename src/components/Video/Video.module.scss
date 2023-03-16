@@ -1,0 +1,9 @@
+.video {
+  margin-bottom: 165px;
+  &__container {
+    background: url(../../static/img/video-pre.png);
+    margin: 0 auto;
+    width: 719px;
+    height: 650px;
+  }
+}

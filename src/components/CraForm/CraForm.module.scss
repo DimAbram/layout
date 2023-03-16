@@ -1,0 +1,16 @@
+.craForm {
+  margin-bottom: 180px;
+  &__text {
+    max-width: 255px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+  }
+  &__form {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+}

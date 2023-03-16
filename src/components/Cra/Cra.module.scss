@@ -1,0 +1,35 @@
+.cra {
+  height: 560px;
+  background: url(../../static/img/cta_form_img.png);
+  &__text {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+  &__info {
+    max-width: 50%;
+  }
+  &__formText {
+    width: 255px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #e7e7e7;
+  }
+  &__form{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px ;
+    grid-row-gap: 35px;
+  }
+}

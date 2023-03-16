@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  &__text2 {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.12em;
+  }
+}

@@ -1,0 +1,25 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: #242B33;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+  }
+  &__links {
+    display: flex;
+    gap: 40px;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+}
