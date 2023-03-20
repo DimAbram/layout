@@ -11,7 +11,12 @@
   line-height: 27px;
   color: #ffffff;
   text-align: center;
-  &::placeholder{
+  &::placeholder {
     color: #bebebe;
+  }
+  @media (max-width: 850px) {
+    line-height: 20px;
+    width: 150px;
+    height: 40px;
   }
 }

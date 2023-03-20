@@ -38,4 +38,24 @@
       fill: #d4c17f;
     }
   }
+  @media (max-width: 750px) {
+    height: 200px;
+    &__wrapper {
+      width: 100%;
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__logo {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    &__wrapper {
+    justify-content: center;
+  }
+    &__column_none{
+      display: none;
+    }
+  }
 }

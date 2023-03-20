@@ -37,9 +37,23 @@ export const CraForm = () => (
         >
           *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.h
         </motion.span>
-        <MInput custom={2} variants={textAnimation} placeholder='Ваше имя' />
-        <MInput custom={3} variants={textAnimation} placeholder='Ваш телефон' />
-        <MButton custom={4} variants={textAnimation}>
+        <MInput
+          className={st.craForm__input}
+          custom={2}
+          variants={textAnimation}
+          placeholder='Ваше имя'
+        />
+        <MInput
+          className={st.craForm__input}
+          custom={3}
+          variants={textAnimation}
+          placeholder='Ваш телефон'
+        />
+        <MButton
+          className={st.craForm__button}
+          custom={4}
+          variants={textAnimation}
+        >
           Посмотреть район
         </MButton>
       </motion.form>

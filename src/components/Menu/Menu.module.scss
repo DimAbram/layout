@@ -26,4 +26,94 @@
       color: #d4c17f;
     }
   }
+  @media (max-width: 850px) {
+    &__wrapper {
+      padding: 15px 50px;
+    }
+    &__links {
+      gap: 20px;
+    }
+  }
+}
+
+.burgerButton {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  &__span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+  &:hover {
+    .burgerButton__span {
+      background-color: #d4c17f;
+      transition: 0.3s all ease;
+    }
+  }
+}
+
+.burgerButtonClose {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: white;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+}
+
+.BurgerContent {
+  background: #242b33;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  &__links {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    &:hover {
+      transition: 0.3s all ease;
+      color: #d4c17f;
+    }
+  }
 }

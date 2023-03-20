@@ -27,6 +27,7 @@ export const Cra = () => (
     <div className={cn(st.cra__wrapper, "wrapper")}>
       <div className={st.cra__info}>
         <MH3
+          className={st.cra__h3}
           custom={1}
           variants={textAnimation}
           style={{ marginBottom: "50px" }}
@@ -50,8 +51,18 @@ export const Cra = () => (
         viewport={{ amount: 0.5, once: true }}
         className={st.cra__form}
       >
-        <MInput custom={1} variants={textAnimation} placeholder='Ваше имя' />
-        <MInput custom={2} variants={textAnimation} placeholder='Ваш телефон' />
+        <MInput
+          className={st.cra__input}
+          custom={1}
+          variants={textAnimation}
+          placeholder='Ваше имя'
+        />
+        <MInput
+          className={st.cra__input}
+          custom={2}
+          variants={textAnimation}
+          placeholder='Ваш телефон'
+        />
         <motion.span
           custom={3}
           variants={textAnimation}
@@ -59,7 +70,7 @@ export const Cra = () => (
         >
           *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
         </motion.span>
-        <MButton custom={4} variants={textAnimation}>
+        <MButton className={st.cra__input} custom={4} variants={textAnimation}>
           Посмотреть район
         </MButton>
       </motion.form>

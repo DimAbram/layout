@@ -10,4 +10,12 @@
     line-height: 14px;
     letter-spacing: 0.12em;
   }
+  @media (max-width: 850px) {
+    width: 113px;
+    &__text2 {
+      margin-top: 10px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
 }

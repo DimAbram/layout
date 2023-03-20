@@ -10,15 +10,15 @@ import st from "./Footer.module.scss";
  export const Footer = () => (
    <div className={cn(st.footer)}>
      <div className={cn("wrapper", st.footer__wrapper)}>
-       <Logo />
-       <div className={st.footer__column}>
+       <Logo className={st.footer__logo} />
+       <div className={cn(st.footer__column, st.footer__column_none)}>
          <span className={st.footer__row}>О комплексе</span>
          <span className={st.footer__row}>Район</span>
          <span className={st.footer__row}>Каталог квартир</span>
          <span className={st.footer__row}>Ипотека</span>
          <span className={st.footer__row}>Контакты</span>
        </div>
-       <div className={st.footer__column}>
+       <div className={cn(st.footer__column, st.footer__column_none)}>
          <span className={st.footer__row}>О комплексе</span>
          <span className={st.footer__row}>Район</span>
          <span className={st.footer__row}>Каталог квартир</span>

@@ -10,4 +10,10 @@
   color: #ffffff;
   background: #D4C17F;
   border: none;
+  @media (max-width: 850px) {
+    font-size: 14px;
+    line-height: 20px;
+    width: 150px;
+    height: 40px;
+  }
 }

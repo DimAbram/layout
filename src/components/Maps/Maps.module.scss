@@ -1,8 +1,21 @@
 .maps {
-  &__map{
+  &__map {
     background: #626262;
     height: 358px;
     margin-top: 100px;
   }
   margin-bottom: 180px;
+  @media (max-width: 850px) {
+    margin-bottom: 70px;
+    &__map {
+      height: 300px;
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 30px;
+    &__map {
+      margin-top: 30px;
+    }
+  }
 }
